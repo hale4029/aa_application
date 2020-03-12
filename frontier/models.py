@@ -8,3 +8,15 @@ class AssetClass(models.Model):
 
     def __self__(self):
         return self.name
+
+
+class Allocation(models.Model):
+    name = models.CharField(max_length=100)
+    aa_1 = models.CharField(max_length=100)
+    aa_2 = models.CharField(max_length=100)
+    aa_3 = models.CharField(max_length=100)
+    aa_4 = models.CharField(max_length=100)
+
+    def __self__(self):
+        return self.name
+

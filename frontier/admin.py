@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import AssetClass
+from .models import Allocation
 
 admin.site.register(AssetClass)
-
-# Register your models here.
+admin.site.register(Allocation)
