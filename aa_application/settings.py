@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'frontier.apps.FrontierConfig',
     'django.contrib.admin',
     'django.contrib.auth',

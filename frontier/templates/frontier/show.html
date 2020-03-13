@@ -1,6 +1,27 @@
 {% extends "frontier/base.html" %}
+
+<script>
+{% block jquery %}
+  var endpoint = '/api/data/'
+  //var data = {{ context }}
+
+  $.ajax({
+    method: "GET"
+    url: endpoint,
+    success: functionJ(data){
+      console.log(data)
+    },
+    error: function(error_data){
+      console.log("error")
+      console.log(error_data)
+    }
+  })
+{% endblock %}
+</script>
+
 {% block content %}
 
+  
   <h1>Asset Allocation</h1>
 
   <h3>{{ allocation.name }}</h3>

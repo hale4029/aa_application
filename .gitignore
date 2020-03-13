@@ -44,6 +44,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+frontier/__pycache__/urls.cpython-37.pyc
+frontier/__pycache__/views.cpython-37.pyc
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
