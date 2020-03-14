@@ -6,48 +6,47 @@ import seaborn as sns
 import csv
 import scipy.optimize as sco
 
-# import pdb; pdb.set_trace()
-# def efficient_frontier():
-cov_matrix = pd.read_csv("/Users/hlevin/turing/aa_application/frontier/data/cov_matrix.csv", index_col=0)
-returns_table = pd.read_csv("/Users/hlevin/turing/aa_application/frontier/data/returns.csv", index_col=0)
-mean_returns = returns_table['Expected Return (Nominal)']
 
-np.random.seed(42)
-num_ports = 6000
-all_weights = np.zeros((num_ports, len(cov_matrix.columns)))
-ret_arr = np.zeros(num_ports)
-vol_arr = np.zeros(num_ports)
-sharpe_arr = np.zeros(num_ports)
+def efficient_frontier():
+    cov_matrix = pd.read_csv("/Users/hlevin/turing/aa_application/frontier/data/cov_matrix.csv", index_col=0)
+    returns_table = pd.read_csv("/Users/hlevin/turing/aa_application/frontier/data/returns.csv", index_col=0)
+    mean_returns = returns_table['Expected Return (Nominal)']
 
-for x in range(num_ports):
-    # Weights
-    weights = np.array(np.random.random(4))
-    weights = weights/np.sum(weights)
-    
-    # Save weights
-    all_weights[x,:] = weights
-    
-    # Expected return
-    ret_arr[x] = np.sum(mean_returns * weights)
-    
-    # Expected volatility
-    vol_arr[x] = np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights)))
-    
-    # Sharpe Ratio
-    sharpe_arr[x] = ret_arr[x]/vol_arr[x]
+    np.random.seed(42)
+    num_ports = 6000
+    all_weights = np.zeros((num_ports, len(cov_matrix.columns)))
+    ret_arr = np.zeros(num_ports)
+    vol_arr = np.zeros(num_ports)
+    sharpe_arr = np.zeros(num_ports)
+
+    for x in range(num_ports):
+        # Weights
+        weights = np.array(np.random.random(4))
+        weights = weights/np.sum(weights)
+        
+        # Save weights
+        all_weights[x,:] = weights
+        
+        # Expected return
+        ret_arr[x] = np.sum(mean_returns * weights)
+        
+        # Expected volatility
+        vol_arr[x] = np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights)))
+        
+        # Sharpe Ratio
+        sharpe_arr[x] = ret_arr[x]/vol_arr[x]
 
 
-max_sharp_location = sharpe_arr.argmax()
+    max_sharp_location = sharpe_arr.argmax()
 
-#all_weights = (all_weights[sharpe_arr.argmax(),:])
-max_sr_ret = ret_arr[sharpe_arr.argmax()]
-max_sr_vol = vol_arr[sharpe_arr.argmax()]
+    #all_weights = (all_weights[sharpe_arr.argmax(),:])
+    max_sr_ret = ret_arr[sharpe_arr.argmax()]
+    max_sr_vol = vol_arr[sharpe_arr.argmax()]
 
-plt.figure(figsize=(12,8))
-plt.scatter(vol_arr, ret_arr, c=sharpe_arr, cmap='viridis')
-plt.colorbar(label='Sharpe Ratio')
-plt.xlabel('Volatility')
-plt.ylabel('Return')
-plt.scatter(max_sr_vol, max_sr_ret,c='red', s=50) # red dot
-import pdb; pdb.set_trace()
-#return plt.show()
+    # plt.figure(figsize=(12,8))
+    # plt.scatter(vol_arr, ret_arr, c=sharpe_arr, cmap='viridis')
+    # plt.colorbar(label='Sharpe Ratio')
+    # plt.xlabel('Volatility')
+    # plt.ylabel('Return')
+    # plt.scatter(max_sr_vol, max_sr_ret,c='red', s=50) # red dot
+    return [ret_arr, vol_arr, sharpe_arr, max_sr_ret, max_sr_vol]

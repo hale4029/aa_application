@@ -1,24 +1,5 @@
 {% extends "frontier/base.html" %}
 
-<script>
-{% block jquery %}
-  var endpoint = '/api/data/'
-  //var data = {{ context }}
-
-  $.ajax({
-    method: "GET"
-    url: endpoint,
-    success: functionJ(data){
-      console.log(data)
-    },
-    error: function(error_data){
-      console.log("error")
-      console.log(error_data)
-    }
-  })
-{% endblock %}
-</script>
-
 {% block content %}
 
   
@@ -29,5 +10,26 @@
     <p>{{ allocation.aa_2 }}</p>
     <p>{{ allocation.aa_3 }}</p>
     <p>{{ allocation.aa_4 }}</p>
+
+
+
+  {% block jquery %}
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    var endpoint = '/api/chart/data/'
+    
+    debugger;
+    $.ajax({
+      method: "GET",
+      url: endpoint,
+      success: function(data){
+        console.log(data)
+      },
+      error: function(error_data){
+        console.log("error")
+        console.log(error_data)
+      }
+    })
+  </script>
+  {% endblock %}
 
 {% endblock content %}

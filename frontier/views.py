@@ -3,6 +3,8 @@ from .models import AssetClass
 from .models import Allocation
 from .forms import AllocationForm
 
+from .eff_front import efficient_frontier
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -27,5 +29,11 @@ class ChartData(APIView):
     permission_classes = []
 
     def get(self, request, format=None):
-        allocation = Allocation.objects.get(id=2)
-        return Response(allocation)
+        aa_id = request.GET['aa_id']
+        Allocation.objects.get(id=aa_id)
+        data = efficient_frontier()
+        import pdb; pdb.set_trace()
+        content = {
+            'data': data
+        }
+        return Response(content)
