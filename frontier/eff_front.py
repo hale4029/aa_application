@@ -49,4 +49,4 @@ def efficient_frontier():
     # plt.xlabel('Volatility')
     # plt.ylabel('Return')
     # plt.scatter(max_sr_vol, max_sr_ret,c='red', s=50) # red dot
-    return [ret_arr, vol_arr, sharpe_arr, max_sr_ret, max_sr_vol]
+    return {'returns': ret_arr, 'volatility': vol_arr, 'sharp': sharpe_arr, 'max_sharp_ret': max_sr_ret, 'max_sharp_vol': max_sr_vol}
