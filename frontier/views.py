@@ -30,9 +30,8 @@ class ChartData(APIView):
 
     def get(self, request, format=None):
         aa_id = request.GET['aa_id']
-        Allocation.objects.get(id=aa_id)
-        data = efficient_frontier()
-        import pdb; pdb.set_trace()
+        allocations = Allocation.objects.get(id=aa_id)
+        data = efficient_frontier(allocations)
         content = {
             'data': data
         }
