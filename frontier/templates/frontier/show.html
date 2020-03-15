@@ -20,30 +20,10 @@
     <div id="chartContainer" style="height: 300px; width: 300px;"></div>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-  <!-- {% block jquery %}
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    var endpoint = '/api/chart/data/'
-    
-    debugger;
-    $.ajax({
-      method: "GET",
-      url: endpoint,
-      success: function(data){
-        console.log(data)
-      },
-      error: function(error_data){
-        console.log("error")
-        console.log(error_data)
-      }
-    })
-  </script>
-  {% endblock %} -->
-
-
 
 <script>
-
-var endpoint = 'http://localhost:8000/frontier/api/chart/data/?aa_id=2'
+var aa_id = window.location.pathname.replace(/\D/g,'')
+var endpoint = `http://localhost:8000/frontier/api/chart/data/?aa_id=${aa_id}`
 var scatter_points = [];
 
 dataPoints = fetch(endpoint)
@@ -69,8 +49,8 @@ function parseDataPoints(data) {
   i = 0
   while (i < data.data.returns.length) {
     scatter_points.push({
-      x: data.data.volatility[i],
-      y: data.data.returns[i]
+      x: data.data.volatility[i] * 100,
+      y: data.data.returns[i] * 100
     });
     i += 1
   }
@@ -89,13 +69,20 @@ function makeChart(data) {
     axisX: {
       title:"Volatility",
       minimum: 0.00,
-      maximum: 0.20
+      maximum: 25,
+      suffix: "%",
+		  valueFormatString: "#.0",
+      includeZero: false, 
+		  //interval: .01,
     },
     axisY:{
       title: "Return",
       minimum: 0.00,
-      maximum: 0.10
-      //valueFormatString: "$#,##0k"
+      maximum: 10,
+      suffix: "%",
+		  valueFormatString: "#.0",
+      includeZero: false, 
+		  //interval: .01,
     },
     data: [{
       type: "scatter",
