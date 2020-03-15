@@ -17,7 +17,7 @@
     <p>{{ allocation.aa_9 }}</p>
     <p>{{ allocation.aa_10 }}</p>
 
-    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <div id="chartContainer" style="height: 300px; width: 300px;"></div>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
   <!-- {% block jquery %}
@@ -42,7 +42,8 @@
 
 
 <script>
-var endpoint = 'http://localhost:8000/frontier/api/chart/data/?aa_id=1'
+
+var endpoint = 'http://localhost:8000/frontier/api/chart/data/?aa_id=2'
 var scatter_points = [];
 
 dataPoints = fetch(endpoint)
@@ -65,21 +66,20 @@ dataPoints = fetch(endpoint)
 
 
 function parseDataPoints(data) {
-  x = 0
-  debugger;
-  while (x < data.data.returns.length);
-  debugger;
+  i = 0
+  while (i < data.data.returns.length) {
     scatter_points.push({
-      x: data.data.volatility[x],
-      y: data.data.returns[x]
+      x: data.data.volatility[i],
+      y: data.data.returns[i]
     });
-    x += 1
+    i += 1
+  }
 };
 
 
 function makeChart(data) {
   parseDataPoints(data)
-  debugger;
+  
   var chart = new CanvasJS.Chart("chartContainer", {
     animationEnabled: true,
     zoomEnabled: true,
@@ -89,7 +89,7 @@ function makeChart(data) {
     axisX: {
       title:"Volatility",
       minimum: 0.00,
-      maximum: 1
+      maximum: 0.20
     },
     axisY:{
       title: "Return",
