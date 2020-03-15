@@ -10,10 +10,17 @@
     <p>{{ allocation.aa_2 }}</p>
     <p>{{ allocation.aa_3 }}</p>
     <p>{{ allocation.aa_4 }}</p>
+    <p>{{ allocation.aa_5 }}</p>
+    <p>{{ allocation.aa_6 }}</p>
+    <p>{{ allocation.aa_7 }}</p>
+    <p>{{ allocation.aa_8 }}</p>
+    <p>{{ allocation.aa_9 }}</p>
+    <p>{{ allocation.aa_10 }}</p>
 
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-
-  {% block jquery %}
+  <!-- {% block jquery %}
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     var endpoint = '/api/chart/data/'
     
@@ -30,6 +37,76 @@
       }
     })
   </script>
-  {% endblock %}
+  {% endblock %} -->
+
+
+
+<script>
+var endpoint = 'http://localhost:8000/frontier/api/chart/data/?aa_id=1'
+var scatter_points = [];
+
+dataPoints = fetch(endpoint)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    makeChart(data);
+  });
+
+
+// function parseDataPoints(data) {
+//   for (var i = data.data.returns.length; i < data.data.volatility.length; i++)
+//     debugger;
+//     scatter_points.push({
+//       x: data.data.volatility[i],
+//       y: data.data.returns[i]
+//   });
+// };
+
+
+function parseDataPoints(data) {
+  x = 0
+  debugger;
+  while (x < data.data.returns.length);
+  debugger;
+    scatter_points.push({
+      x: data.data.volatility[x],
+      y: data.data.returns[x]
+    });
+    x += 1
+};
+
+
+function makeChart(data) {
+  parseDataPoints(data)
+  debugger;
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    zoomEnabled: true,
+    title:{
+      text: "Efficient Frontier"
+    },
+    axisX: {
+      title:"Volatility",
+      minimum: 0.00,
+      maximum: 1
+    },
+    axisY:{
+      title: "Return",
+      minimum: 0.00,
+      maximum: 0.10
+      //valueFormatString: "$#,##0k"
+    },
+    data: [{
+      type: "scatter",
+      toolTipContent: "<b>Area: </b>{x} sq.ft<br/><b>Price: </b>${y}k",
+      dataPoints: scatter_points
+    }]
+  });
+  chart.render();
+  
+  }
+</script>
+
 
 {% endblock content %}

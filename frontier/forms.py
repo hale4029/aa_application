@@ -10,5 +10,11 @@ class AllocationForm(forms.ModelForm):
                   'aa_1',
                   'aa_2',
                   'aa_3',
-                  'aa_4'
+                  'aa_4',
+                  'aa_5',
+                  'aa_6',
+                  'aa_7',
+                  'aa_8',
+                  'aa_9',
+                  'aa_10'
          ]

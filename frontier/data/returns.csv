@@ -1,5 +1,118 @@
 Asset Class,Index Name,Expected Return (Nominal),Expected Return (Real),Average Net Yield,Capital Growth,Valuation Change,Diversification Return,Residual,Volatility,Sharpe Ratio
 US Large,S&P 500,0.0230,0.0030,1.8%,1.2%,-2.8%,0.0%,0.0%,14.4%,0.06
 US Small,Russell 2000,0.0370,0.0170,1.5%,2.0%,-1.8%,0.0%,0.0%,19.1%,0.11
+Australia,MSCI Australia,0.0820,0.0620,4.0%,2.0%,0.3%,0.0%,0.0%,21.8%,0.31
+Canada,MSCI Canada,0.0640,0.0440,3.0%,1.9%,-0.5%,0.0%,0.0%,17.1%,0.29
+France,MSCI France,0.0620,0.0420,3.0%,1.8%,-0.6%,0.0%,0.0%,20.9%,0.22
+Germany,MSCI Germany,0.0720,0.0520,3.0%,1.8%,0.4%,0.0%,0.0%,22.8%,0.25
+Hong Kong,MSCI Hong Kong,0.0760,0.0560,3.1%,2.5%,0.0%,0.0%,0.0%,21.1%,0.29
+Italy,MSCI Italy,0.0780,0.0580,4.1%,1.8%,-0.1%,0.0%,0.0%,24.6%,0.25
+Japan,MSCI Japan,0.0620,0.0420,2.3%,1.8%,0.1%,0.0%,0.0%,17.5%,0.27
+Spain,MSCI Spain,0.0940,0.0740,4.4%,1.8%,1.2%,0.0%,0.0%,23.8%,0.33
+Sweden,MSCI Sweden,0.0710,0.0510,3.5%,1.5%,0.1%,0.0%,0.0%,21.9%,0.25
+Switzerland,MSCI Switzerland,0.0420,0.0220,2.8%,1.1%,-1.6%,0.0%,0.0%,17.7%,0.15
+United Kingdom,MSCI UK,0.0860,0.0670,4.6%,1.5%,0.6%,0.0%,0.0%,18.2%,0.39
+Brazil,MSCI Brazil,0.0830,0.0640,3.1%,2.2%,1.0%,0.0%,0.0%,30.4%,0.23
+China,MSCI China,0.0830,0.0630,1.9%,3.3%,1.1%,0.0%,0.0%,28.4%,0.24
+India,MSCI India,0.0540,0.0340,1.2%,3.1%,-1.0%,0.0%,0.0%,25.7%,0.15
+Indonesia,MSCI Indonesia,0.0870,0.0680,2.8%,3.3%,0.6%,0.0%,0.0%,25.9%,0.28
+Malaysia,MSCI Malaysia,0.1080,0.0880,3.6%,3.3%,1.9%,0.0%,0.0%,15.9%,0.58
+Mexico,MSCI Mexico,0.0800,0.0600,3.1%,2.4%,0.5%,0.0%,0.0%,22.6%,0.28
+Poland,MSCI Poland,0.1130,0.0930,3.3%,2.9%,3.0%,0.0%,0.0%,29.0%,0.34
+Russia,MSCI Russia,0.1490,0.1290,7.0%,2.7%,3.2%,0.0%,0.0%,34.2%,0.39
+South Africa,MSCI South Africa,0.0850,0.0650,3.1%,2.6%,0.8%,0.0%,0.0%,24.1%,0.29
+South Korea,MSCI South Korea,0.0960,0.0760,2.2%,3.5%,1.9%,0.0%,0.0%,24.3%,0.33
+Taiwan,MSCI Taiwan,0.0710,0.0510,3.6%,2.3%,-0.8%,0.0%,0.0%,20.0%,0.28
+Thailand,MSCI Thailand,0.0870,0.0670,3.2%,2.4%,1.0%,0.0%,0.0%,22.5%,0.32
+Turkey,MSCI Turkey,0.1380,0.1180,3.4%,3.0%,5.4%,0.0%,0.0%,33.1%,0.37
 All country,MSCI ACWI,0.0470,0.0270,2.5%,1.6%,-1.3%,0.0%,0.0%,15.6%,0.21
+Global Developed,MSCI World,0.0440,0.0240,2.5%,1.4%,-1.5%,0.0%,0.0%,15.2%,0.19
+Europe,MSCI Europe,0.0720,0.0520,3.7%,1.6%,0.0%,0.0%,0.0%,18.7%,0.3
 EAFE,MSCI EAFE,0.0700,0.0500,3.4%,1.6%,0.0%,0.0%,0.0%,16.9%,0.33
+Emerging Markets,MSCI EM,0.0900,0.0700,3.0%,2.8%,1.2%,0.0%,0.0%,21.2%,0.35
+US Treasury Short,Barclays US Treasury 1-3yr,0.0130,-0.0070,1.4%,-2.0%,-0.1%,0.0%,0.0%,1.9%,-0.13
+US Treasury Long,Barclays US Treasury Long,-0.0080,-0.0280,2.4%,-2.0%,-3.1%,0.0%,0.0%,11.9%,-0.2
+US Treasury Intermediate,Barclays US Treasury Intermediate,0.0150,-0.0050,1.9%,-2.0%,-0.4%,0.0%,0.0%,3.4%,0.01
+US Agency,Barclays US Agency Fixed Rate MBS,0.0140,-0.0060,1.6%,-2.0%,-0.2%,0.0%,0.0%,3.1%,-0.02
+US Corporate Intermediate,Barclays US Intermediate Corporate,0.0170,-0.0030,2.3%,-2.0%,-0.6%,0.0%,0.0%,4.4%,0.06
+US Corporate Long,Barclays US Long Corporate,-0.0140,-0.0340,1.1%,-2.0%,-2.5%,0.0%,0.0%,9.5%,-0.31
+US High Yield,Barclays US Corporate High Yield,0.0220,0.0020,2.7%,-2.0%,-0.5%,0.0%,0.0%,9.0%,0.08
+US Corporate Short,Barclays US Corporate 1-3yr,0.0150,-0.0040,1.7%,-2.0%,-0.1%,0.0%,0.0%,2.7%,0.03
+US Aggregate,Barclays US Aggregate,0.0110,-0.0090,1.9%,-2.0%,-0.8%,0.0%,0.0%,3.7%,-0.11
+US Tips,Barclays US Treasury US TIPS,0.0200,0.0000,0.0%,0.0%,-0.1%,0.0%,0.0%,5.6%,0.09
+US Long TIPS,Barclays US Treasury Inflation Note 10+ yr,0.0170,-0.0030,0.2%,0.0%,-0.5%,0.0%,0.0%,9.8%,0.02
+Global Ex-US Treasury,Barclays Global Trsy Ex US,0.0130,-0.0070,0.9%,-1.1%,-0.5%,0.0%,0.0%,7.8%,-0.02
+Global Ex-US Aggregate,Barclays Global Aggregate Ex-US USD,0.0130,-0.0060,0.8%,-1.1%,-0.4%,0.0%,0.0%,7.7%,-0.02
+Global Aggregate,Barclays Global Agg USD,0.0150,-0.0050,1.3%,-1.3%,-0.5%,0.0%,0.0%,6.2%,0
+Emerging Market (Non-Local),J.P. Morgan EMBI+,0.0310,0.0110,4.3%,-2.0%,-1.2%,0.0%,0.0%,8.4%,0.19
+Emerging Market (Local),J.P. Morgan GBI-EM,0.0590,0.0390,5.7%,-2.1%,0.3%,0.0%,0.0%,13.1%,0.34
+EM Cash,J.P. Morgan ELMI+,0.0530,0.0330,4.6%,-2.1%,0.7%,0.0%,0.0%,7.6%,0.49
+Commodities,Bloomberg Commodity Index,0.0390,0.0190,-2.7%,-2.0%,3.3%,3.3%,0.0%,15.8%,0.15
+Credit Suisse,Credit Suisse Commodity Index,0.0510,0.0320,-1.9%,-2.0%,4.2%,2.9%,0.0%,19.1%,0.19
+S&P GSCI,S&P GSCI Commodity Index,0.0450,0.0250,-2.3%,-2.0%,4.4%,2.4%,0.0%,21.8%,0.14
+Bank Loans,J.P. Morgan Leveraged Loans,0.0260,0.0060,2.7%,-2.0%,0.0%,0.0%,0.0%,6.8%,0.16
+Australia Cash,Australia 3M Gov't Bill,0.0380,0.0180,1.8%,-1.2%,1.2%,0.0%,0.0%,12.9%,0.18
+Canada Cash,Canada 3M Gov't Bill,0.0330,0.0130,1.9%,-1.3%,0.7%,0.0%,0.0%,9.7%,0.19
+Hong Kong Cash,Hong Kong  3M Gov't Bill,0.0330,0.0130,2.5%,-1.1%,-0.1%,0.0%,0.0%,5.0%,0.37
+Japan Cash,Japan  3M Gov't Bill,0.0170,-0.0030,-0.8%,-0.1%,0.6%,0.0%,0.0%,9.8%,0.02
+Sweden Cash,Sweden 3M Gov't Bill,0.0300,0.0100,1.0%,-1.2%,1.3%,0.0%,0.0%,11.5%,0.13
+Switzerland Cash,Switzerland  3M Gov't Bill,0.0150,-0.0040,-0.1%,-0.8%,0.5%,0.0%,0.0%,10.3%,0.01
+United Kingdom Cash,UK  3M Gov't Bill,0.0170,-0.0030,1.8%,-2.5%,0.4%,0.0%,0.0%,8.7%,0.03
+Brazil Cash,Brazil  3M Gov't Bill,0.0560,0.0360,5.3%,-3.4%,1.7%,0.0%,0.0%,15.6%,0.26
+China Cash,China  3M Gov't Bill,0.0500,0.0300,3.9%,-1.0%,0.1%,0.0%,0.0%,12.1%,0.29
+India Cash,India  3M Gov't Bill,0.0570,0.0370,6.7%,-3.1%,0.1%,0.0%,0.0%,8.4%,0.5
+Indonesia Cash,Indonesia  3M Gov't Bill,0.0660,0.0470,5.8%,-1.6%,0.4%,0.0%,0.0%,9.4%,0.55
+Malaysia Cash,Malaysia  3M Gov't Bill,0.0690,0.0490,3.6%,0.5%,0.7%,0.0%,0.0%,7.7%,0.69
+Mexico Cash,Mexico  3M Gov't Bill,0.0580,0.0380,6.1%,-2.9%,0.6%,0.0%,0.0%,11.9%,0.36
+Poland Cash,Poland  3M Gov't Bill,0.0280,0.0080,1.1%,-0.9%,0.6%,0.0%,0.0%,13.9%,0.09
+Russia Cash,Russia  3M Gov't Bill,0.0540,0.0340,5.1%,-2.6%,0.9%,0.0%,0.0%,15.8%,0.25
+South Africa Cash,South Africa  3M Gov't Bill,0.0570,0.0370,6.3%,-3.6%,1.0%,0.0%,0.0%,15.4%,0.27
+South Korea Cash,South Korea  3M Gov't Bill,0.0500,0.0300,1.9%,0.6%,0.5%,0.0%,0.0%,11.6%,0.3
+Taiwan Cash,Taiwan  3M Gov't Bill,0.0260,0.0060,0.9%,-0.4%,0.1%,0.0%,0.0%,4.8%,0.23
+Thailand Cash,Thailand  3M Gov't Bill,0.0310,0.0110,0.9%,0.1%,0.1%,0.0%,0.0%,5.5%,0.3
+Turkey Cash,Turkey  3M Gov't Bill,0.0690,0.0490,13.5%,-10.5%,1.9%,0.0%,0.0%,15.6%,0.35
+Eurozone Cash,Eurozone  3M Gov't Bill,0.0180,-0.0020,-0.1%,-0.8%,0.7%,0.0%,0.0%,9.8%,0.03
+Aluminum,Aluminum,0.0190,-0.0010,-0.2%,-2.0%,2.1%,0.0%,0.0%,20.5%,0.02
+Coffee,Coffee,0.0340,0.0140,-0.4%,-2.0%,3.8%,0.0%,0.0%,28.7%,0.07
+Copper,Copper,0.0280,0.0080,0.3%,-2.0%,2.5%,0.0%,0.0%,26.3%,0.05
+Corn,Corn,0.0290,0.0090,-0.1%,-2.0%,3.0%,0.0%,0.0%,28.8%,0.05
+Cotton,Cotton,0.0400,0.0200,0.4%,-2.0%,3.6%,0.0%,0.0%,27.0%,0.09
+Gold,Gold,-0.0060,-0.0260,0.2%,-2.0%,-0.8%,0.0%,0.0%,17.5%,-0.12
+Heating Oil,Heating Oil,0.0450,0.0250,-0.3%,-2.0%,4.8%,0.0%,0.0%,29.3%,0.1
+Lean Hogs,Lean Hogs,0.0230,0.0030,-0.7%,-2.0%,3.0%,0.0%,0.0%,30.3%,0.03
+Live Cattle,Live Cattle,0.0120,-0.0080,-0.3%,-2.0%,1.5%,0.0%,0.0%,13.9%,-0.02
+Natural Gas,Natural Gas,0.0390,0.0190,-3.4%,-2.0%,7.3%,0.0%,0.0%,38.2%,0.06
+Nickel,Nickel,0.0310,0.0110,0.1%,-2.0%,3.0%,0.0%,0.0%,33.7%,0.05
+Silver,Silver,0.0320,0.0120,0.0%,-2.0%,3.2%,0.0%,0.0%,30.8%,0.06
+Soybeans,Soybeans,0.0340,0.0140,0.3%,-2.0%,3.0%,0.0%,0.0%,24.7%,0.08
+Soybean Meal,Soybean Meal,0.0270,0.0070,0.4%,-2.0%,2.3%,0.0%,0.0%,28.1%,0.04
+Soybean Oil,Soybean Oil,0.0350,0.0150,-0.3%,-2.0%,3.8%,0.0%,0.0%,23.3%,0.09
+Sugar,Sugar,0.0350,0.0150,0.9%,-2.0%,2.6%,0.0%,0.0%,32.4%,0.06
+Wheat,Wheat,0.0150,-0.0050,0.1%,-2.0%,1.4%,0.0%,0.0%,33.0%,0
+WTI Crude,WTI Crude,0.0550,0.0350,0.0%,-2.0%,5.5%,0.0%,0.0%,31.6%,0.12
+Zinc,Zinc,0.0210,0.0010,0.2%,-2.0%,1.9%,0.0%,0.0%,26.8%,0.02
+Asia Ex-Japan,MSCI Asia Ex-Japan,0.0840,0.0640,2.4%,2.8%,1.2%,0.0%,0.0%,21.0%,0.33
+Global Ex-US Corporates,Barclays Global Corporate Ex-US,0.0130,-0.0070,0.6%,-1.1%,-0.2%,0.0%,0.0%,9.0%,-0.02
+Japan Aggregate,Barclays Japan Aggregate,0.0260,0.0060,0.9%,-0.1%,-0.1%,0.0%,0.0%,10.8%,0.11
+Australia Government,Bloomberg/EFFAS Australia 5-7 Year,0.0310,0.0110,2.3%,-1.2%,0.0%,0.0%,0.0%,11.9%,0.14
+Germany Government,Barclays Germany Government 5-7 Year,0.0120,-0.0070,0.2%,-0.8%,-0.1%,0.0%,0.0%,9.2%,-0.02
+UK Government,Barclays UK Government 5-7 Year,0.0160,-0.0030,2.4%,-2.5%,-0.2%,0.0%,0.0%,7.9%,0.02
+EAFE Cash,MSCI EAFE Currency,0.0200,0.0000,0.5%,-1.1%,0.6%,0.0%,0.0%,6.9%,0.07
+REITS,FTSE NAREIT All Equity REIT,0.0330,0.0130,4.1%,0.0%,-2.8%,0.0%,0.0%,22.5%,0.08
+United States Cash,US 3M T-Bill,0.0150,-0.0050,1.5%,-2.0%,0.0%,0.0%,0.0%,1.3%,0
+US Commercial Real Estate,NCREIF NPI,0.0400,0.0200,5.2%,-2.0%,-1.2%,0.0%,0.0%,12.5%,0.2
+Global DM Ex-US Long/Short Equity,EAFE Long/Short Simulation,0.0520,0.0320,1.2%,0.9%,0.4%,0.0%,0.7%,11.6%,0.32
+US Long/Short Equity,US Long/Short Simulation,0.0290,0.0090,0.6%,0.5%,-1.0%,0.0%,0.7%,8.8%,0.16
+Europe LBO,Europe LBO Simulation,0.0850,0.0650,4.5%,2.3%,-0.3%,0.0%,0.0%,29.1%,0.24
+US LBO,US LBO Simulation,0.0190,-0.0010,2.3%,1.9%,-4.2%,0.0%,0.0%,28.1%,0.02
+US Venture Capital,US VC Simulation,0.0340,0.0140,1.8%,1.9%,-2.8%,0.0%,0.5%,30.0%,0.06
+UK ILBs,Barclays UK Inflation Linked,-0.0010,-0.0210,-1.0%,0.3%,-1.3%,0.0%,0.0%,11.7%,-0.13
+Euro ILBs,Barclays Euro Inflation Linked,0.0110,-0.0090,-1.4%,0.6%,0.0%,0.0%,0.0%,11.0%,-0.03
+Japan ILBs,Barclays Japan Inflation Linked,0.0300,0.0100,-0.2%,0.6%,0.6%,0.0%,0.0%,11.0%,0.14
+Australia ILBs,Barclays Australia Inflation Linked,0.0280,0.0080,0.8%,0.7%,-0.7%,0.0%,0.0%,13.3%,0.1
+UK Aggregate,Barclays Sterling Aggregate 7-10 Year,0.0090,-0.0110,2.0%,-2.5%,-0.7%,0.0%,0.0%,9.2%,-0.06
+European Aggregate,Barclays Euro Aggregate,0.0060,-0.0140,-0.2%,-0.8%,-0.3%,0.0%,0.0%,10.3%,-0.08
+US High Yield (Hedged),Barclays US Corporate High Yield,0.0220,0.0020,2.7%,-2.0%,-0.5%,0.0%,0.0%,9.0%,0.08
+Bank Loans (Hedged),JPMorgan Leveraged Loans,0.0260,0.0060,2.7%,-2.0%,0.0%,0.0%,0.0%,6.8%,0.16
+Gasoline,Gasoline,0.0680,0.0480,1.6%,-2.0%,5.1%,0.0%,0.0%,34.2%,0.15
+Brent Crude,Brent Crude,0.0540,0.0340,0.1%,-2.0%,5.3%,0.0%,0.0%,30.7%,0.13

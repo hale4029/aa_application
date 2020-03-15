@@ -6,16 +6,21 @@ import seaborn as sns
 import csv
 import scipy.optimize as sco
 
-
 def efficient_frontier(allocations):
     header = []
     header.append(allocations.aa_1)
     header.append(allocations.aa_2)
     header.append(allocations.aa_3)
     header.append(allocations.aa_4)
-    header.remove('none')
+    header.append(allocations.aa_5)
+    header.append(allocations.aa_6)
+    header.append(allocations.aa_7)
+    header.append(allocations.aa_8)
+    header.append(allocations.aa_9)
+    header.append(allocations.aa_10)
+    header = list(filter(lambda x : x != 'None', header))
     count = len(header)
-    
+
     cov_matrix = pd.read_csv("/Users/hlevin/turing/aa_application/frontier/data/cov_matrix.csv", index_col=0)
     cov_matrix = cov_matrix.loc[header, header]
     returns_table = pd.read_csv("/Users/hlevin/turing/aa_application/frontier/data/returns.csv", index_col=0)
