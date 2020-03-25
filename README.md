@@ -4,7 +4,7 @@
 
 ### Goal
 
-Create an asset allocation web application that allows a user to select asset classes, enter in their portfolio’s current or desired weights, and then generate an efficient frontier using Research Affiliate’s asset class projections and correlations. The user would then be able to see where their current portfolio stand in relations to other, more efficient portfolios. 
+Create an asset allocation web application that allows a user to select asset classes, enter in their portfolio’s current or desired weights, and then generate an efficient frontier using Research Affiliate’s asset class projections and correlations. The user would then be able to see where their current portfolio stands in relations to other, more efficient portfolios. 
 
 ### Minimum Viable Product (Current Functionality)
 
